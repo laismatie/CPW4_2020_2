@@ -2,21 +2,23 @@
   <div>
     <Header/>
     <div id="container">
-      <Contato/>
+      <PainelContato/>
       <Agenda/>
     </div>
+    <Rodape/>
   </div>
 </template>
 
 <script>
+import Rodape from './components/Rodape.vue'
 import Agenda from './components/Agenda.vue'
-import Contato from './components/Contato.vue'
+import PainelContato from './components/PainelContato.vue'
 import Header from './components/Header.vue'
 
 export default {
   name: 'App',
   components: {
-    Contato, Header, Agenda
+    PainelContato, Header, Agenda, Rodape
   }
 }
 </script>
@@ -32,14 +34,14 @@ export default {
 }
 @font-face {
   font-family: "decorativa";
-  src: url(./fonts/GreatVibes-Regular.ttf);
+  src: url(./fonts/BadScript-Regular.ttf);
 }
 
 :root {
-  --cor-padrao: #80cbc4;
-  --cor-decorativa: #26a69a;
-  --cor-destaque: #00695c;
-  --cor-fundo: #e0f2f1;
+  --cor-padrao: #a8dadc;
+  --cor-decorativa: #457b9d;
+  --cor-destaque: #1d3557;
+  --cor-fundo: #e3f5f8;
 }
 body {
   margin: 0;
@@ -47,5 +49,7 @@ body {
 }
 #container{
   display: flex;
+  justify-content: space-between;
+  margin: auto;
 }
 </style>

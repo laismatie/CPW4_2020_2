@@ -1,7 +1,10 @@
 <template>
   <div id="header">
         <img src="../assets/logo.png" alt="Agenda">
-        <h1>Agenda</h1>
+        <h1>
+            <p>Minha</p>
+            <span>AGENDA</span>
+        </h1>
   </div>
 </template>
 
@@ -13,20 +16,36 @@ export default {
 
 <style scoped>
 #header{
-    background-image: linear-gradient(to right, var(--cor-decorativa), var(--cor-padrao));
+    background-color: var(--cor-destaque);
     color: white;
-    padding: 10px 10px 10px 10px;
+    padding: 3px;
     display: flex;
+    
 }
 img{
-    width: 90px;
-    height: 90px;
-    margin: 5px 20px 5px 10px;
-    vertical-align: auto;
+    width: 50px;
+    height: 50px;
+    margin: 10px;   
 }
-
 h1{
+    margin: 0px;
+    align-items: center;
+    padding: 0px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    display: inline-flex;
+}
+h1 p{
     font-family: "decorativa";
-    font-size: 300%;
+    font-size: 0.7em;
+    margin: 0px 5px 0px 0px;
+    padding: 0px;
+    font-weight: lighter;
+}
+h1 span{
+    font-family: "padrao";
+    font-size: 0.7em;
+    margin: 0px;
+    padding: 0px;
 }
 </style>

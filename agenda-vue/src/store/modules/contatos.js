@@ -22,14 +22,14 @@ const moduloContatos = {
         ],
     },
     getters: {
-        todosContatos: state => state.contatos
+        todosContatos: state => state.contatos,
     },
     actions: {
         salvarContato: ({ commit }, contato) => {
             commit("adicionarContato",contato);
         },
         excluirContato: ({commit}, id) =>{
-            commit('removerContato', id)
+            commit("removerContato", id);
         }
     },
     mutations: {
@@ -37,7 +37,8 @@ const moduloContatos = {
         removerContato: 
             (state, id) => 
                 state.contatos = 
-                    state.contatos.filter(contato => contato.id !== id)
+                    state.contatos.filter(contato => contato.id !== id),
+        renderizarInicial: (state, contato) => state.contatos.nomsplice(contato.nome)
     }
 };
 

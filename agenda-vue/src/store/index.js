@@ -1,10 +1,10 @@
 import { createStore } from 'vuex';
-import moduloContatos from './modules/contatos';
+import Contatos from './modules/contatos';
 
 const store = createStore({
-    modules:{
-        moduloContatos
-    }
+   modules:{
+       Contatos
+   }
 });
 
 export default store;
