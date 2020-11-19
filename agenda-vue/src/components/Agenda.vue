@@ -26,6 +26,9 @@ export default {
   components:{
       BlocoContato
   },
+  props:{
+    contato: Object
+  }
   
 }
 </script>

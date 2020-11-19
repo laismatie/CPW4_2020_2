@@ -2,12 +2,12 @@
   <div id="painelContato">
     <div id="formularioContato">
       <form @submit="salvar">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome">
+        <label for="nome" >Nome:</label>
+        <input type="text" id="nome" name="nome" v-model="nome" required>
         <label for="telefone">Telefone:</label>
-        <input type="text" id="telefone" name="telefone" >
+        <input type="text" id="telefone" name="telefone" v-model="telefone" required>
         <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email" v-model="email" required>
 
         <button>Salvar</button>
       </form>

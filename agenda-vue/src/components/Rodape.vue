@@ -25,4 +25,8 @@ export default {
 #dadosInstituto{
     text-align: center;
 }
+#dadosInstituto p{
+    float: right;
+}
+
 </style>
