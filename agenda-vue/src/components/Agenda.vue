@@ -1,14 +1,14 @@
 <template>
-  <div id="agenda">  
-      <div id="agendaCaixa">
+  <div id="agenda" >  
+      <div id="agendaCaixa" v-if="todosContatos != 0">
         <span>Meus contatos</span>
         <BlocoContato
-          v-for="contato in todosContatos"
-          v-bind:key="contato.id"
-          :contato="contato"
+          v-for="contatos in todosContatos"
+          v-bind:key="contatos.id"
+          :contato="contatos"
         />
       </div>
-      
+      <div id="mensagem" v-else>Não há contatos salvos.</div>
   </div>
 </template>
 
@@ -27,7 +27,7 @@ export default {
       BlocoContato
   },
   props:{
-    contato: Object
+    contatos: Object
   }
   
 }
@@ -38,18 +38,24 @@ export default {
     font-family: "decorativa";
     font-size: 1.4em;
     width: 50%;
-    margin: 5px auto 5px auto;
+    margin: 5px;
     padding: 10px;
 }
 #agendaCaixa{
-    padding: 10px;
+    padding: 3px;
     color: white;
     font-size: 1.1em;
     background-color: var(--cor-decorativa);
     border-radius: 20px;
-    margin-top: 5px;
+    margin: 5px auto 0px auto;
 }
 span{
   margin-left: 10px;
 }
+@media (max-width: 600px){
+  #agenda{
+    width: 90vw;
+  }
+}
+
 </style>

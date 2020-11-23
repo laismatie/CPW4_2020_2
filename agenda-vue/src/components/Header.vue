@@ -20,6 +20,7 @@ export default {
     color: white;
     padding: 3px;
     display: flex;
+    width: 100vw;
     
 }
 img{

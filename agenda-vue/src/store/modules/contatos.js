@@ -1,27 +1,9 @@
 const moduloContatos = {
     state: {
-        contatos: [
-        {
-            id: Math.random().toString(36).substr(2, 5),
-            nome: "Laís Matie Hara",
-            telefone: "(67) 99999-9999",
-            email: "lais@email.com"
-        },
-        {
-            id: Math.random().toString(36).substr(2, 5),
-            nome: "Geovanna Chaves",
-            telefone: "(67) 98888-9999",
-            email: "geovanna@email.com"
-        },
-        {
-            id: Math.random().toString(36).substr(2, 5),
-            nome: "Sidney Sousa",
-            telefone: "(67) 98767-7676",
-            email: "sidney@email.com"
-        }
-        ],
+        contatos: [],
     },
     getters: {
+        
         todosContatos: state => state.contatos,
     },
     actions: {

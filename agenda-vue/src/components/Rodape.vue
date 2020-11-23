@@ -14,19 +14,31 @@ export default {
 
 <style scoped>
 #container{
-   background-color: var(--cor-destaque);
+    background-color: var(--cor-destaque);
     color: white;
-    padding: 20px;
     font-family: "padrao";
     display: flex;
-    align-items: flex-end;
     flex-direction: column;
+    position: fixed;
+    bottom:0;
+    width: 100vw;
+    
 }
 #dadosInstituto{
-    text-align: center;
+    margin: 1px 30px;
+    padding: 10px;
+    text-align: right;
 }
 #dadosInstituto p{
-    float: right;
+    margin: 0px;
+    text-align: right;
 }
-
+@media (max-width: 600px){
+    #dadosInstituto{
+        text-align: center;    }
+    #dadosInstituto p{
+        margin-top: 0px;
+        text-align: center;
+    }
+}
 </style>

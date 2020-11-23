@@ -101,4 +101,19 @@ button:hover{
   background-color: var(--cor-destaque);
   transition: 0.7s;
 }
+@media (max-width: 600px){
+  #painelContato{
+    width: 90vw;
+    padding: 10px;
+    margin: 10px auto 0px auto;
+  }
+  #formularioContato{
+    margin: 8px auto 8px auto;
+    width: 70vw;
+    padding: 10px 10px 70px 10px;
+  }
+  #nome, #telefone,#email{
+    width: 260px;
+  }
+} 
 </style>

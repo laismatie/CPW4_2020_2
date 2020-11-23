@@ -28,18 +28,18 @@ export default {
 #blocoContato{
     display: flex;
     width: 80%;
-    margin: auto;
+    margin: 0px auto 10px auto;
     background-color: white;
     border-radius: 15px;
     font-family: "padrao";
     padding: 10px;
     justify-content: center;
     color: black;
-    margin-bottom: 10px;
 }
 button{
     border: none;
     outline: none;
+    float: right;
     background-color: white;
     vertical-align: middle;
     align-items: flex-end;

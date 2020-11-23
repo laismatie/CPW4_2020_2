@@ -49,7 +49,17 @@ body {
 }
 #container{
   display: flex;
+  width: 100vw;
   justify-content: space-between;
   margin: auto;
+}
+
+@media (max-width: 600px){
+  #container{
+    display: block;
+    padding: auto;
+    margin: auto;
+  }
+  
 }
 </style>
